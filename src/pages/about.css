@@ -1,0 +1,271 @@
+/* About Page Styles */
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* About Hero Section */
+.about-hero {
+  background: #0d8c9c;
+  color: white;
+  padding: 35px 30px;
+  border-radius: 15px;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+.about-hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.about-hero-content p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Our Story Section */
+.our-story {
+  margin-bottom: 40px;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.story-image-container {
+  flex: 1;
+  max-width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.story-text em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Mission Section */
+.our-mission {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.mission-text h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.mission-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.values-list span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Approach Section */
+.approach-section {
+  margin: 60px 0;
+}
+
+.approach-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.approach-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.approach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.approach-card .card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.approach-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.approach-card p {
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #0d8c9c;
+  color: white;
+  border-radius: 15px;
+  padding: 50px 30px;
+  text-align: center;
+  margin: 60px 0 40px;
+}
+
+.cta-content h3 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cta-content .btn {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-content .btn:hover {
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+  .story-content {
+    flex-direction: column;
+  }
+  
+  .story-image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .about-hero-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 30px 20px;
+  }
+  
+  .our-mission {
+    padding: 30px 20px;
+  }
+  
+  .approach-content {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-content .btn {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-content h2 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+  
+  .approach-card {
+    padding: 20px 15px;
+  }
+}

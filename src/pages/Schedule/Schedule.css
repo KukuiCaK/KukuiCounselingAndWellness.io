@@ -1,0 +1,168 @@
+/* src/pages/Schedule/Schedule.css */
+.schedule-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Schedule Hero Section */
+  .schedule-hero {
+    background: #0d8c9c;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    margin: 20px 0 40px;
+    text-align: center;
+  }
+  
+  .schedule-hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .schedule-hero-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Scheduling Section */
+  .scheduling-section {
+    margin: 40px 0;
+  }
+  
+  .scheduling-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheduling-intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .scheduling-intro h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .scheduling-intro p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .scheduling-widget {
+    min-height: 600px;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Placeholder for scheduling widget */
+  .scheduling-placeholder {
+    height: 600px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    color: #666;
+  }
+  
+  .placeholder-icon {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .placeholder-note {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-style: italic;
+    color: #999;
+  }
+  
+  .scheduling-info {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .scheduling-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .scheduling-info ul {
+    padding-left: 20px;
+  }
+  
+  .scheduling-info li {
+    margin-bottom: 10px;
+  }
+  
+  /* Insurance Section */
+  .insurance-section {
+    margin: 40px 0;
+  }
+  
+  .insurance-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .insurance-info p {
+    margin-bottom: 15px;
+  }
+  
+  .payment-methods h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .payment-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .schedule-hero-content h2 {
+      font-size: 2.5rem;
+    }
+    
+    .schedule-hero-content p {
+      font-size: 1.1rem;
+    }
+    
+    .scheduling-container {
+      padding: 30px 20px;
+    }
+    
+    .insurance-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .schedule-hero-content h2 {
+      font-size: 2rem;
+    }
+    
+    .scheduling-intro h3 {
+      font-size: 1.5rem;
+    }
+    
+    .payment-icons {
+      flex-wrap: wrap;
+    }
+  }
